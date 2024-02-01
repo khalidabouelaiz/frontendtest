@@ -3,9 +3,7 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
-.custom-bg {
-  background-color: #5e493a;
-}
+
 .custom-color {
   color: white !important;
 }
@@ -17,7 +15,7 @@
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Ajustez la taille de l'icône selon vos besoins */
+  font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -28,17 +26,11 @@
 }
 body {
   min-height: 100vh;
-  background: url('../../assets/cadeau/acceuilcli.jpg');
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f1f1;
+  background: url('src/assets/cadeau/acceuila.webp');
+  background-size: cover;
 }
 .about-section {
-  background-size: 55%;
-  background: url('../../assets/cadeau/acceuilcli.jpg');
-  overflow: hidden;
-  padding: 100px 0;
+  padding: 200px 0;
 }
 .inner-container {
   width: 55%;
@@ -86,12 +78,108 @@ body {
     padding: 60px;
   }
 }
+
+.navbar {
+  background-color: transparent; /* Couleur de fond de la barre de navigation */
+  padding: 10px 0; /* Marge intérieure en haut et en bas */
+  transition: background-color 0.3s; /* Transition de couleur fluide */
+}
+.carouselpr {
+  margin-top: 20vh;
+}
+
+/* Style au survol */
+.navbar:hover {
+  background-color: #7f7f7f;
+  /* Couleur au survol */
+}
+.nav-link:hover {
+  color: #333;
+}
+
+/* Style pour le texte de la marque (navbar-brand) */
+.navbar-brand {
+  font-size: 24px; /* Taille de la police */
+  font-weight: bold; /* Gras */
+  color: #ffffff; /* Couleur du texte */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+/* Style pour les liens de la barre de navigation */
+.navbar-nav .nav-link {
+  cursor: grab;
+  font-size: 16px; /* Taille de la police */
+  color: #ffffff; /* Couleur du texte */
+  margin-right: 20px; /* Marge à droite entre les éléments de la liste */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+/* Style pour l'icône dans les liens */
+.navbar-nav .nav-link .material-icons {
+  vertical-align: middle; /* Centrer l'icône verticalement avec le texte */
+  font-size: 24px; /* Taille de l'icône */
+  margin-right: 5px; /* Marge à droite de l'icône */
+}
+
+/* Style pour le bouton Toggle (hamburger) */
+.navbar-toggler {
+  background-color: #ffffff; /* Couleur du bouton hamburger */
+  border: none; /* Pas de bordure */
+}
+
+/* Style pour la couleur de fond du menu déroulant */
+.navbar-collapse {
+  background-color: transparent; /* Couleur de fond du menu déroulant */
+}
+
+/* Style pour les liens dans le menu déroulant */
+.navbar-collapse .navbar-nav .nav-link {
+  font-weight: bold;
+  color: #ffffff; /* Couleur du texte dans le menu déroulant */
+}
+
+/* Style pour le lien actif (par exemple, la page actuelle) */
+.navbar-nav .nav-item.active .nav-link {
+  background-color: #ffffff; /* Couleur de fond du lien actif */
+  color: transparent; /* Couleur du texte du lien actif */
+  border-radius: 5px; /* Coins arrondis pour le lien actif */
+}
+/* Style de base pour le footer */
 footer {
-  background-color: #5e493a;
-  color: #ffffff;
-  font-size: 0.5cm;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: #7f7f7f; /* Couleur de fond du footer */
+  color: #ffffff; /* Couleur du texte dans le footer */
+  padding: 20px 0; /* Marge intérieure en haut et en bas */
+  text-align: center; /* Centrer le texte horizontalement */
+}
+
+/* Style pour le texte du footer */
+footer p {
+  font-size: 14px; /* Taille de la police */
+  margin: 0; /* Supprimer les marges par défaut */
+}
+
+/* Style pour les liens du footer */
+footer a {
+  color: #ffffff; /* Couleur du texte des liens dans le footer */
+  text-decoration: none; /* Supprimer la soulignement des liens */
+  margin: 0 10px; /* Marge à gauche et à droite entre les liens */
+  font-size: 14px; /* Taille de la police */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+/* Style pour les liens du footer au survol */
+footer a:hover {
+  text-decoration: underline; /* Souligner les liens au survol */
+}
+
+/* Style pour les liens de la partie droite du footer */
+.footer-right {
+  float: right; /* Aligner les liens à droite du footer */
+}
+
+/* Style pour le séparateur entre les liens */
+.footer-right::before {
+  content: '|'; /* Ajouter un séparateur (barre verticale) entre les liens */
+  margin: 0 10px; /* Marge à gauche et à droite du séparateur */
+  font-size: 14px; /* Taille de la police du séparateur */
 }

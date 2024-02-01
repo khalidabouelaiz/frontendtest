@@ -104,7 +104,10 @@
               class="row d-flex justify-content-center align-items-center h-100"
             >
               <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                <div class="card shadow-2-strong" style="border-radius: 3rem">
+                <div
+                  class="card shadow-2-strong"
+                  style="border-radius: 3rem; background: #fffffff2"
+                >
                   <div class="eight">
                     <h1>Inscription utilisateur</h1>
                   </div>
@@ -200,20 +203,19 @@
                             placeholder="Password"
                             formControlName="password"
                           />
-                            <div
-                          *ngIf="
-                            UserRegistrationForm.get('password')?.touched &&
-                            UserRegistrationForm.get('password')?.hasError(
-                              'passwordRequirements'
-                            )
-                          "
-                          class="error-message"
-                        >
-                          Le mot de passe doit avoir au moins 8 caractères avec
-                          un chiffre ou un caractère spécial.
-                        </div>
+                          <div
+                            *ngIf="
+                              UserRegistrationForm.get('password')?.touched &&
+                              UserRegistrationForm.get('password')?.hasError(
+                                'passwordRequirements'
+                              )
+                            "
+                            class="error-message"
+                          >
+                            Le mot de passe doit avoir au moins 8 caractères
+                            avec un chiffre ou un caractère spécial.
+                          </div>
                         </mat-form-field>
-                      
                       </div>
                     </div>
 
@@ -235,12 +237,8 @@
     <div class="container">
       <div class="footer-left">
         <p>&copy; 2023 Entreprise de ThéTopTop. Tous droits réservés.</p>
-      </div>
-      <div class="footer-right">
-        <p>
-          Politique de confidentialité | Mentions légales | Politique des
-          cookies
-        </p>
+
+        Politique de confidentialité | Mentions légales | Politique des cookies
       </div>
     </div>
   </footer>
