@@ -9,15 +9,8 @@
 .custom-color {
   color: white !important;
 }
-html {
-  background: url('src/assets/cadeau/acceuila.webp');
-  background-size: cover;
-}
+
 body {
-  background: url('src/assets/cadeau/acceuila.webp');
-  background-size: cover;
-}
-.arriere {
   background: url('src/assets/cadeau/acceuila.webp');
   background-size: cover;
 }
