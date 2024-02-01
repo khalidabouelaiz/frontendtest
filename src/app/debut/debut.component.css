@@ -16,10 +16,11 @@ body {
   }
   /* Style de base pour la barre de navigation */
   .navbar {
-    background-color: transparent; /* Couleur de fond de la barre de navigation */
+    background-color: #0000001f; /* Couleur de fond de la barre de navigation */
     padding: 10px 0; /* Marge intérieure en haut et en bas */
     transition: background-color 0.3s; /* Transition de couleur fluide */
   }
+
   .carouselpr {
     margin-top: 20vh;
   }
@@ -486,7 +487,37 @@ body {
   .styleh {
     font-size: 2.5rem;
     text-align: center;
-
+    padding: 0;
+    line-height: 45px;
+    font-size: 36px;
     padding: 1rem;
+  }
+  .inpes-link {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .inpes-text {
+    text-align: unset;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .age-warning {
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+  .row {
+    padding: 0;
+  }
+  .col-lg-4 {
+    padding: 0;
+  }
+  .contest-info {
+    padding: 20px;
+  }
+  .brsr {
+    display: none;
   }
 }
