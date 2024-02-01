@@ -226,3 +226,8 @@ footer a:hover {
   margin: 0 10px; /* Marge à gauche et à droite du séparateur */
   font-size: 14px; /* Taille de la police du séparateur */
 }
+.pacc {
+  position: fixed;
+  bottom: 0; /* le placer en bas de la fenêtre */
+  right: 0;
+}
