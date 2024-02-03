@@ -1,4 +1,124 @@
 @charset "UTF-8";
+.ti {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  margin-top: 100px;
+  border-radius: 2px;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1em 0em;
+  position: absolute;
+  background-color: #3b3b3bd2;
+  left: 50%;
+
+  margin: 0 0 0 -20em;
+}
+.butt {
+  text-align: center;
+  padding: 20px;
+}
+.buttt {
+  text-align: center;
+  padding: 20px;
+}
+
+button.learn-more {
+  font-weight: 600;
+  color: #e88d14;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #ad1b02;
+  border: 2px solid #f3be26;
+  border-radius: 0.75em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f3be26;
+  border-radius: inherit;
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.75em, -1em);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more:hover {
+  background: #ffe9e9;
+  -webkit-transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
+}
+
+button.learn-more:hover::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+button.learn-more:active {
+  background: #ffe9e9;
+  -webkit-transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
+}
+
+button.learn-more:active::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
+}
+
+.ti span {
+  font: 700 4em/1 'Oswald', sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(239, 15, 15, 0.5);
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 body {
   background-size: cover;
   background-attachment: fixed;
@@ -8,6 +128,62 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.tssawr {
+  margin-top: 290px;
+}
+.aze {
+  background-color: #1a1a1a55;
+  display: flex; /* Ajoute le modèle de boîte flexible */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  overflow: auto; /* Conserve le défilement si les éléments débordent */
+  padding: 10px; /* Ajoute un peu d'espace autour des éléments */
+}
+
+.azre {
+  margin: 10px; /* Ajuste l'espacement entre les éléments si nécessaire */
+  position: relative; /* Conserve la position relative pour le positionnement des titres */
+}
+
+.azre1,
+.azre2,
+.azre3,
+.azre4,
+.azre5 {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 0 0 19px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+
+.azre-title {
+  margin-left: 10%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.azre:hover .azre-title {
+  transform: translateY(+100px);
+}
+.card {
+  background-color: #3b3b3bd2;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
 @media (min-width: 768px) {
   .styleh {
     font-size: 3.5rem;
@@ -131,6 +307,9 @@ body {
   }
   .containera {
     display: flex;
+
+    margin-bottom: 100px;
+
     margin-left: 10%;
     margin-right: 10%;
 
@@ -191,26 +370,6 @@ body {
     flex: 4; /* Les deux colonnes auront la même largeur */
     padding: 20px; /* Espacement interne pour chaque colonne */
     border: 1px solid #333; /* Bordure pour chaque colonne */
-  }
-  .cardtext1 h2 {
-    font-size: 24px; /* Large font size for the title */
-    text-align: center; /* Center the title */
-    color: #333; /* Dark text color for readability */
-    margin-bottom: 20px; /* Space below the title */
-  }
-
-  .card-title {
-    font-size: 18px; /* Slightly smaller font size for the subtitle */
-    color: #666; /* Slightly lighter text color */
-    margin-top: 20px; /* Space above the subtitle */
-    text-align: center; /* Center the subtitle */
-  }
-
-  .cardtext2 {
-    font-size: 14px; /* Standard text size */
-    color: #333; /* Dark text color for readability */
-    text-align: justify; /* Justify the text for a neat appearance */
-    padding: 0 10px; /* Padding on the sides for some breathing room */
   }
   main {
     background: url('src/assets/cadeau/acceuila.webp');
@@ -417,18 +576,6 @@ body {
   }
 
   /* Form and Card Styling */
-  .card {
-    background-color: #f8f8f8c7;
-    border-radius: 25px;
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-  .card-title {
-    font-size: 1.4rem;
-    color: #444;
-    margin-bottom: 20px;
-  }
 
   .form-control {
     border-radius: 20px;
@@ -489,7 +636,7 @@ body {
     text-align: center;
     padding: 0;
     line-height: 45px;
-    font-size: 36px;
+    font-size: 37px;
     padding: 1rem;
   }
   .inpes-link {
