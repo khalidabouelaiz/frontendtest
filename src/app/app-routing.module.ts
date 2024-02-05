@@ -17,6 +17,7 @@ import { EmployerComponent } from './employer/employer.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CreateCreationemployerComponent } from './create-creationemployer/create-creationemployer.component';
 import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
+import { RobotsComponent } from './robots/robots.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'debut', pathMatch: 'full' },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'employer', component: EmployerComponent },
   { path: 'creationemployer', component: CreateCreationemployerComponent },
   { path: 'regledejeux', component: RegledejeuxComponent },
+  { path: 'robots.txt', component: RobotsComponent },
 
   {
     path: 'adminn',

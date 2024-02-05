@@ -1,0 +1,11 @@
+# robots.txt
+User-agent: *
+Disallow: /adminn
+Disallow: /employer
+Allow: /regledejeux
+Allow: /debut
+Allow: /aboutUS
+Allow: /sign-up
+Allow: /login
+
+sitemap: http://thethiptopkhalidabouelaiz.eu:4200/#/sitemap.xmls

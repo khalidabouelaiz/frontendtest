@@ -125,12 +125,14 @@
                       <div class="card" style="border-radius: 45px">
                         <div class="card-body">
                           <div class="butt">
-                            <button class="learn-more">
+                            <button class="learn-more" (click)="onInsc()">
                               Inscrivez-vous maintenant
                             </button>
                           </div>
                           <div class="buttt">
-                            <button class="learn-more">Accès membre</button>
+                            <button class="learn-more" (click)="onLog()">
+                              Accès membre
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -271,7 +273,9 @@
 
             <div class="card-body">
               <div class="butt">
-                <button class="learn-more">Inscrivez-vous maintenant</button>
+                <button class="learn-more" (click)="onInsc()">
+                  Inscrivez-vous maintenant
+                </button>
               </div>
             </div>
           </div>
