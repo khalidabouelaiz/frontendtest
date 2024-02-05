@@ -37,6 +37,7 @@ import { EmployerComponent } from './employer/employer.component';
 import { CreateCreationemployerComponent } from './create-creationemployer/create-creationemployer.component';
 import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
 import { RobotsComponent } from './robots/robots.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { RobotsComponent } from './robots/robots.component';
     CreateCreationemployerComponent,
     RegledejeuxComponent,
     RobotsComponent,
+    SitemapComponent,
   ],
   imports: [
     BrowserModule,

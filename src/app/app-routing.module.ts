@@ -18,6 +18,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CreateCreationemployerComponent } from './create-creationemployer/create-creationemployer.component';
 import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
 import { RobotsComponent } from './robots/robots.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'debut', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'creationemployer', component: CreateCreationemployerComponent },
   { path: 'regledejeux', component: RegledejeuxComponent },
   { path: 'robots.txt', component: RobotsComponent },
+  { path: 'sitemap.xml', component: SitemapComponent },
 
   {
     path: 'adminn',
