@@ -40,4 +40,7 @@ export class DebutComponent implements OnInit {
   onabout() {
     this.router.navigate(['/aboutUS']);
   }
+  onregl() {
+    this.router.navigate(['/regledejeux']);
+  }
 }

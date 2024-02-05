@@ -86,22 +86,6 @@ button.learn-more:active::before {
   transform: translate3d(0, 0, -1em);
 }
 
-.ti span {
-  font: 700 4em/1 'Oswald', sans-serif;
-  letter-spacing: 0;
-  padding: 0.25em 0 0.325em;
-  display: block;
-  margin: 0 auto;
-  text-shadow: 0 0 80px rgba(239, 15, 15, 0.5);
-  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: aitf 80s linear infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-}
-
 @-webkit-keyframes aitf {
   0% {
     background-position: 0% 50%;
@@ -185,6 +169,21 @@ body {
 }
 
 @media (min-width: 768px) {
+  .ti span {
+    font: 700 4em/1 'Oswald', sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(239, 15, 15, 0.5);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
   .styleh {
     font-size: 3.5rem;
 
@@ -437,6 +436,22 @@ body {
 }
 
 @media (max-width: 767px) {
+  .ti span {
+    font: 700 4em/1 'Oswald', sans-serif;
+    letter-spacing: 0;
+    font-size: 0.5rem;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(239, 15, 15, 0.5);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
   main {
     background: url('src/assets/cadeau/acceuila.webp');
     background-size: cover;

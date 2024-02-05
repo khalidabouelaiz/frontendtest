@@ -35,6 +35,7 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { DebutComponent } from './debut/debut.component';
 import { EmployerComponent } from './employer/employer.component';
 import { CreateCreationemployerComponent } from './create-creationemployer/create-creationemployer.component';
+import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { CreateCreationemployerComponent } from './create-creationemployer/creat
     DebutComponent,
     EmployerComponent,
     CreateCreationemployerComponent,
+    RegledejeuxComponent,
   ],
   imports: [
     BrowserModule,

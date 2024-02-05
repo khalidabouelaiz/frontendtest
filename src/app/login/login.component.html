@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta
       name="keywords"
@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Concours de Thé - Gagnez des Prix Incroyables avec Thethiptop</title>
+    <title>PFE</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light custom-bg fixed-top">
@@ -45,14 +45,25 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-color align-center" (click)="onInsc()">
-                <i class="material-icons">person_add</i
-                >&nbsp;&nbsp;Inscription</a
+              <a
+                class="nav-link custom-color align-center"
+                style="cursor: pointer"
+                (click)="onregl()"
+              >
+                <i class="material-icons">description</i>&nbsp;&nbsp;Les règles
+                du jeu</a
               >
             </li>
+
             <li class="nav-item">
               <a class="nav-link custom-color align-center" (click)="onabout()"
                 ><i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-color align-center" (click)="onInsc()">
+                <i class="material-icons">person_add</i
+                >&nbsp;&nbsp;Inscription</a
               >
             </li>
           </ul>

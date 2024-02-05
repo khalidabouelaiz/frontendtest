@@ -17,11 +17,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light custom-bg">
       <div class="container">
-        <a
-          class="navbar-brand custom-color"
-          style="color: #ffffff"
-          href="/#/debut"
-        >
+        <a class="navbar-brand custom-color" style="color: #ffffff">
           <i class="material-icons">sports_esports</i>&nbsp;&nbsp;Jeu Concours
           de Thé</a
         >
@@ -44,10 +40,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-color align-center" (click)="onLogin()">
-                <i class="material-icons">person</i>&nbsp;&nbsp;Se connecter</a
+              <a
+                class="nav-link custom-color align-center"
+                style="cursor: pointer"
+                (click)="onregl()"
+              >
+                <i class="material-icons">description</i>&nbsp;&nbsp;Les règles
+                du jeu</a
               >
             </li>
+
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
@@ -55,6 +57,11 @@
               >
                 <i class="material-icons">person_add</i
                 >&nbsp;&nbsp;Inscription</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-color align-center" (click)="onLogin()">
+                <i class="material-icons">person</i>&nbsp;&nbsp;Se connecter</a
               >
             </li>
           </ul>

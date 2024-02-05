@@ -107,4 +107,7 @@ export class SignUpComponent implements OnInit {
   onCloseButtonClick() {
     $('#exampleModalCenter').modal('hide');
   }
+  onregl() {
+    this.router.navigate(['/regledejeux']);
+  }
 }

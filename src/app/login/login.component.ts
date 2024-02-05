@@ -264,4 +264,7 @@ export class LoginComponent implements OnInit {
   onCloseButtonClick() {
     $('#exampleModalCenter').modal('hide');
   }
+  onregl() {
+    this.router.navigate(['/regledejeux']);
+  }
 }
