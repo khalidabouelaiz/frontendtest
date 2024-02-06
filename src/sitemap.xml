@@ -28,7 +28,7 @@
       <loc>http://thethiptopkhalidabouelaiz.eu:4200/#/adminn</loc>
       <lastmod>2024-01-01</lastmod>
       <changefreq>daily</changefreq>
-      <priority>1.0</priority>
+      <priority>0</priority>
    </url>
     <url>
       <loc>http://thethiptopkhalidabouelaiz.eu:4200/#/employer</loc>
@@ -55,6 +55,19 @@
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
+   <url>
+      <loc>http://thethiptopkhalidabouelaiz.eu:4200/#/regledejeux</loc>
+      <lastmod>2024-01-01</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+    <url>
+      <loc>http://thethiptopkhalidabouelaiz.eu:4200/#/employer</loc>
+      <lastmod>2024-01-01</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0</priority>
+   </url>
+   
 
   
 
