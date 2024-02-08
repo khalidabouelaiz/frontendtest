@@ -44,7 +44,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link custom-color align-center" (click)="ondebut()">
+              <a
+                class="nav-link custom-color align-center"
+                (click)="ondebut()"
+                href="/#/debut"
+              >
                 <i class="material-icons">home</i>&nbsp;&nbsp;Accueil</a
               >
             </li>
@@ -53,6 +57,7 @@
                 class="nav-link custom-color align-center"
                 style="cursor: grab"
                 (click)="onabout()"
+                href="/#/aboutUS"
               >
                 <i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
               >
@@ -61,13 +66,18 @@
               <a
                 class="nav-link custom-color align-center"
                 (click)="onRegister()"
+                href="/#/sign-up"
               >
                 <i class="material-icons">person_add</i
                 >&nbsp;&nbsp;Inscription</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-color align-center" (click)="onLogin()">
+              <a
+                class="nav-link custom-color align-center"
+                href="/#/login"
+                (click)="onLogin()"
+              >
                 <i class="material-icons">person</i>&nbsp;&nbsp;Se connecter</a
               >
             </li>

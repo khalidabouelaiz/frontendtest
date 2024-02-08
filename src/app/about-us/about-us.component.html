@@ -39,7 +39,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link custom-color align-center" (click)="ondebut()">
+              <a
+                class="nav-link custom-color align-center"
+                href="/#/debut"
+                (click)="ondebut()"
+              >
                 <i class="material-icons">home</i>&nbsp;&nbsp;Accueil</a
               >
             </li>
@@ -48,6 +52,7 @@
                 class="nav-link custom-color align-center"
                 style="cursor: pointer"
                 (click)="onregl()"
+                href="/#/regledejeux"
               >
                 <i class="material-icons">description</i>&nbsp;&nbsp;Les règles
                 du jeu</a
@@ -57,6 +62,7 @@
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
+                href="/#/sign-up"
                 (click)="onRegister()"
               >
                 <i class="material-icons">person_add</i
@@ -64,7 +70,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-color align-center" (click)="onLogin()">
+              <a
+                class="nav-link custom-color align-center"
+                (click)="onLogin()"
+                href="/#/login"
+              >
                 <i class="material-icons">person</i>&nbsp;&nbsp;Se connecter</a
               >
             </li>
