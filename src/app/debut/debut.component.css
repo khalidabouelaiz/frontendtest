@@ -24,10 +24,10 @@
 
 button.learn-more {
   font-weight: 600;
-  color: #e88d14;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 1.25em 2em;
-  background: #ad1b02;
+  background: #12a221;
   border: 2px solid #f3be26;
   border-radius: 0.75em;
   -webkit-transform-style: preserve-3d;
@@ -41,6 +41,7 @@ button.learn-more {
 
 button.learn-more::before {
   position: absolute;
+
   content: '';
   width: 100%;
   height: 100%;
@@ -61,6 +62,7 @@ button.learn-more::before {
 }
 
 button.learn-more:hover {
+  color: #000;
   background: #ffe9e9;
   -webkit-transform: translate(0, 0.25em);
   transform: translate(0, 0.25em);
@@ -180,9 +182,6 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: aitf 80s linear infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
   }
   .styleh {
     font-size: 3.5rem;
