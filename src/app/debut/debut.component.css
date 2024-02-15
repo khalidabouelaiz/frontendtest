@@ -171,17 +171,17 @@ body {
 }
 
 @media (min-width: 768px) {
-  .ti span {
+ .ti span {
     font: 700 4em/1 'Oswald', sans-serif;
     letter-spacing: 0;
     padding: 0.25em 0 0.325em;
     display: block;
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(239, 15, 15, 0.5);
-    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+
+    color: #ffffff;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .styleh {
     font-size: 3.5rem;
