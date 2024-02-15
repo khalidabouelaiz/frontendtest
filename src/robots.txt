@@ -9,4 +9,4 @@ Allow: /#/sign-up
 Allow: /#/login
 Allow: /#/login
 
-sitemap: http://thethiptopkhalidabouelaiz.eu:4200/sitemap.xml
+sitemap: https://thethiptopkhalidabouelaiz.eu/sitemap.xml
