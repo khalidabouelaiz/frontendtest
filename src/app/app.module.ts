@@ -62,7 +62,7 @@ import { CookiesComponent } from './cookies/cookies.component';
     CookiesComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
