@@ -17,6 +17,9 @@ import { EmployerComponent } from './employer/employer.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CreateCreationemployerComponent } from './create-creationemployer/create-creationemployer.component';
 import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
+import { MentionlegComponent } from './mentionleg/mentionleg.component';
+import { PolitiqueComponent } from './politique/politique.component';
+import { CookiesComponent } from './cookies/cookies.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'debut', pathMatch: 'full' },
@@ -33,6 +36,9 @@ const routes: Routes = [
   { path: 'employer', component: EmployerComponent },
   { path: 'creationemployer', component: CreateCreationemployerComponent },
   { path: 'regledejeux', component: RegledejeuxComponent },
+  { path: 'mentionlegal', component: MentionlegComponent },
+  { path: 'politique', component: PolitiqueComponent },
+  { path: 'cookies', component: CookiesComponent },
 
   {
     path: 'adminn',

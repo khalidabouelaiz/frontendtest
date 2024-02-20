@@ -36,6 +36,9 @@ import { DebutComponent } from './debut/debut.component';
 import { EmployerComponent } from './employer/employer.component';
 import { CreateCreationemployerComponent } from './create-creationemployer/create-creationemployer.component';
 import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
+import { MentionlegComponent } from './mentionleg/mentionleg.component';
+import { PolitiqueComponent } from './politique/politique.component';
+import { CookiesComponent } from './cookies/cookies.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,9 @@ import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
     EmployerComponent,
     CreateCreationemployerComponent,
     RegledejeuxComponent,
+    MentionlegComponent,
+    PolitiqueComponent,
+    CookiesComponent,
   ],
   imports: [
     BrowserModule,
