@@ -3,6 +3,5 @@
     "target": "http://thethiptopkhalidabouelaiz.eu/api/",
     "secure": false,
     "logLevel": "debug"
-       
   }
 }
