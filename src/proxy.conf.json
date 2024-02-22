@@ -1,9 +1,8 @@
 {
   "/api/*": {
-    "target": "https://thethiptopkhalidabouelaiz.eu/api/",
+    "target": "http://thethiptopkhalidabouelaiz.eu/api/",
     "secure": false,
     "logLevel": "debug"
-       "changeOrigin": true,
-    "ws": true
+       
   }
 }
