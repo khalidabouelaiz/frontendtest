@@ -4,8 +4,80 @@
     <meta charset="UTF-8" />
     <title>Mentions Légales - ThéTipTop</title>
   </head>
-  <body>
+  <nav class="navbar navbar-expand-lg navbar-light custom-bg">
     <div class="container">
+      <a
+        class="navbar-brand custom-color"
+        style="color: #ffffff"
+        href="/#/debut"
+      >
+        <img
+          src="../../assets/cadeau/teaa.png"
+          alt="Logo de thé "
+          style="width: 40px; height: 40px; margin-right: 10px"
+        />
+        Thé Tip Top</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link custom-color align-center"
+              style="cursor: pointer"
+              (click)="onregl()"
+              href="/#/regledejeux"
+            >
+              <i class="material-icons">description</i>&nbsp;&nbsp;Les règles du
+              jeu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link custom-color align-center"
+              style="cursor: grab"
+              (click)="onabout()"
+              href="/#/aboutUS"
+            >
+              <i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link custom-color align-center"
+              style="cursor: grab"
+              (click)="onInsc()"
+              href="/#/sign-up"
+            >
+              <i class="material-icons">person_add</i>&nbsp;&nbsp;Inscription</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link custom-color align-center"
+              style="cursor: grab"
+              (click)="onLog()"
+              href="/#/login"
+            >
+              <i class="material-icons">person</i>&nbsp;&nbsp;Se connecter</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <div class="containera">
       <h1>Mentions Légales du Site du Jeu Concours ThéTipTop</h1>
 
       <h2>Éditeur du Site :</h2>
@@ -88,5 +160,25 @@
         autre aspect du site, veuillez contacter contact@thetiptop.fr.
       </p>
     </div>
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <p>&copy; 2023 Entreprise de ThéTopTop. Tous droits réservés.</p>
+          <div class="links">
+            <a href="/#/politique" class="btn-link" target="_blank"
+              >Politique de confidentialité</a
+            >
+            |
+            <a href="/#/mentionlegal" class="btn-link" target="_blank"
+              >Mentions légales</a
+            >
+            |
+            <a href="/#/cookies" class="btn-link" target="_blank"
+              >Politique des cookies</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
