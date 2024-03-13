@@ -20,6 +20,7 @@ import { RegledejeuxComponent } from './regledejeux/regledejeux.component';
 import { MentionlegComponent } from './mentionleg/mentionleg.component';
 import { PolitiqueComponent } from './politique/politique.component';
 import { CookiesComponent } from './cookies/cookies.component';
+import { ReglementComponent } from './reglement/reglement.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'debut', pathMatch: 'full' },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'mentionlegal', component: MentionlegComponent },
   { path: 'politique', component: PolitiqueComponent },
   { path: 'cookies', component: CookiesComponent },
+  { path: 'reglement', component: ReglementComponent },
 
   {
     path: 'adminn',
@@ -54,9 +56,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
-})],
+  imports: [
+    RouterModule.forRoot(routes, {
+      initialNavigation: 'enabledBlocking',
+    }),
+  ],
   exports: [RouterModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
 })

@@ -16,7 +16,7 @@
 
   <body>
     <header>
-      <button (click)="onLogin()">Déconnexion</button>
+      <button class="decoo" (click)="onLogin()">Déconnexion</button>
     </header>
 
     <h2>Clients</h2>
@@ -97,6 +97,15 @@
                       }"
                     >
                       {{ lot.nom }}
+                      <button
+                        class="decoo2"
+                        (click)="togglePrisStatus(user, lot)"
+                        [disabled]="lot.pris"
+                        [class.collected]="lot.pris"
+                        [class.not-collected]="!lot.pris"
+                      >
+                        {{ lot.pris ? 'Collecté' : 'Non collecté' }}
+                      </button>
                     </li>
                   </ng-container>
                   <ng-template #noLots>

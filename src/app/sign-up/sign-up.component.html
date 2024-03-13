@@ -13,7 +13,7 @@
     <title>Beautiful thé de thé with Menu thé</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light custom-bg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg">
       <div class="container">
         <a
           class="navbar-brand custom-color"
@@ -43,15 +43,6 @@
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
-                href="/#/debut"
-                (click)="ondebut()"
-              >
-                <i class="material-icons">home</i>&nbsp;&nbsp;Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-color align-center"
                 style="cursor: pointer"
                 (click)="onregl()"
                 href="/#/regledejeux"
@@ -63,18 +54,30 @@
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
-                href="/#/aboutUS"
+                style="cursor: grab"
                 (click)="onabout()"
-                ><i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
+                href="/#/aboutUS"
+              >
+                <i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
-                (click)="onLogin()"
+                style="cursor: grab"
+                href="/#/sign-up"
+              >
+                <i class="material-icons">person_add</i
+                >&nbsp;&nbsp;Inscription</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link custom-color align-center"
+                style="cursor: grab"
                 href="/#/login"
-                ><i class="material-icons">person</i>&nbsp;&nbsp; Se
-                connecter</a
+              >
+                <i class="material-icons">person</i>&nbsp;&nbsp;Se connecter</a
               >
             </li>
           </ul>
@@ -282,6 +285,8 @@
           <a href="/#/cookies" class="btn-link" target="_blank"
             >Politique des cookies</a
           >
+          |
+          <a href="/#/reglement" class="btn-link" target="_blank">Règlement</a>
         </div>
       </div>
     </div>

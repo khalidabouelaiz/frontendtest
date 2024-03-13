@@ -18,7 +18,15 @@ export class DebutComponent implements OnInit {
     }
   }
   authId: string;
-  ngOnInit(): void {}
+  public showModal: boolean = false;
+  ngOnInit(): void {
+    const modalShown = localStorage.getItem('modalShown');
+
+    if (!modalShown) {
+      $('#exampleModalCenter').modal('show');
+      localStorage.setItem('modalShown', 'true');
+    }
+  }
 
   onlogin() {
     this.router.navigate(['/login']);
@@ -42,5 +50,11 @@ export class DebutComponent implements OnInit {
   }
   onregl() {
     this.router.navigate(['/regledejeux']);
+  }
+  onCloseButtonClick() {
+    $('#exampleModalCenter').modal('hide');
+  }
+  onAcceptCookiesButtonClick() {
+    $('#exampleModalCenter').modal('hide');
   }
 }

@@ -89,6 +89,59 @@
           </div>
         </div>
       </nav>
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2
+                class="modal-title"
+                id="exampleModalLongTitle"
+                style="align-items: center"
+              >
+                Acceptez-vous les cookies ?
+              </h2>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" (click)="onCloseButtonClick()"
+                  >&times;</span
+                >
+              </button>
+            </div>
+            <div class="modal-body">
+              Ce site utilise des cookies pour améliorer votre expérience. En
+              continuant à naviguer sur le site, vous acceptez notre utilisation
+              des cookies.
+            </div>
+            <div class="modal-footer">
+              <button
+                (click)="onCloseButtonClick()"
+                type="button"
+                class="btn btn-danger"
+              >
+                Refuser
+              </button>
+              <button
+                (click)="onAcceptCookiesButtonClick()"
+                type="button"
+                class="btn btn-success"
+              >
+                Accepter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
@@ -170,6 +223,7 @@
                   </div>
                 </div>
               </div>
+
               <section class="contest-info">
                 <div>
                   <h2>Comment Participer</h2>
@@ -286,6 +340,10 @@
             |
             <a href="/#/cookies" class="btn-link" target="_blank"
               >Politique des cookies</a
+            >
+            |
+            <a href="/#/reglement" class="btn-link" target="_blank"
+              >Règlement</a
             >
           </div>
         </div>

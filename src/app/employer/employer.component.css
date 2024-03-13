@@ -38,7 +38,7 @@ footer {
 p {
   text-align: center;
 }
-button {
+.decoo {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
@@ -52,8 +52,40 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.decoo2 {
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: 'Inter var', ui-sans-serif, system-ui, -apple-system, system-ui,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+.decoo2.collected {
+  background-color: #00ff00; /* Couleur de fond pour "Collecté" */
+}
 
-button:hover {
+/* Style lorsque l'état est "Non collecté" */
+.decoo2.not-collected {
+  background-color: #ff0000; /* Couleur de fond pour "Non collecté" */
+}
+.decoo:hover {
   background-color: #c0392b;
 }
 .clientt {

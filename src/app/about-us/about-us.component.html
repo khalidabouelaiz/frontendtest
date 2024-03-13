@@ -45,15 +45,6 @@
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
-                href="/#/debut"
-                (click)="ondebut()"
-              >
-                <i class="material-icons">home</i>&nbsp;&nbsp;Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-color align-center"
                 style="cursor: pointer"
                 (click)="onregl()"
                 href="/#/regledejeux"
@@ -62,12 +53,20 @@
                 du jeu</a
               >
             </li>
-
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
+                style="cursor: grab"
+                href="/#/aboutUS"
+              >
+                <i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link custom-color align-center"
+                style="cursor: grab"
                 href="/#/sign-up"
-                (click)="onRegister()"
               >
                 <i class="material-icons">person_add</i
                 >&nbsp;&nbsp;Inscription</a
@@ -76,8 +75,8 @@
             <li class="nav-item">
               <a
                 class="nav-link custom-color align-center"
-                (click)="onLogin()"
-                href="/#/login  "
+                style="cursor: grab"
+                href="/#/login"
               >
                 <i class="material-icons">person</i>&nbsp;&nbsp;Se connecter</a
               >
@@ -124,6 +123,8 @@
           <a href="/#/cookies" class="btn-link" target="_blank"
             >Politique des cookies</a
           >
+          |
+          <a href="/#/reglement" class="btn-link" target="_blank">Règlement</a>
         </div>
       </div>
     </div>

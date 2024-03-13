@@ -96,4 +96,9 @@ export class ApiAppService {
   registerEmployeur(employeurData: any): Observable<any> {
     return this.http.post(baseUrl + '/employeurs', employeurData);
   }
+  updatePrisStatus(lotId: string): Observable<any> {
+    // Vous pouvez ajuster l'URL en fonction de votre backend
+    const url = `${baseUrl}/updatePrisStatus/${lotId}`;
+    return this.http.post(url, {});
+  }
 }

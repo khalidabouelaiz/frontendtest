@@ -85,6 +85,15 @@ export class EmployerComponent implements OnInit {
   onLogin() {
     this.router.navigate(['/login']);
   }
+  markGiftAsTaken(user: any, lot: any): void {
+    // Mettez en œuvre la logique pour signaler que le client a pris le cadeau ici
+    console.log('Cadeau pris par:', user, lot);
+
+    // Vous pouvez implémenter ici une logique pour mettre à jour le backend, par exemple,
+    // en appelant une API pour marquer le cadeau comme pris.
+    // Vous pouvez utiliser this.apiApp.markGiftAsTaken(user, lot) si une telle méthode existe dans votre service.
+  }
+
   retrieveAllLots() {
     this.apiApp.getAllLotsUsed().subscribe({
       next: (data) => {
@@ -101,5 +110,23 @@ export class EmployerComponent implements OnInit {
       },
       error: (e) => console.error(e),
     });
+  }
+
+  togglePrisStatus(user: any, lot: any): void {
+    this.apiApp.updatePrisStatus(lot._id).subscribe(
+      (res: any) => {
+        if (res.status === 1) {
+          console.log('Statut "pris" mis à jour avec succès');
+          // Actualisez la liste des lots après la mise à jour réussie
+          this.retrieveAllLots();
+          window.location.reload();
+        } else {
+          console.log('Erreur lors de la mise à jour du statut "pris"');
+        }
+      },
+      (error) => {
+        console.log("Erreur lors de la communication avec l'API");
+      }
+    );
   }
 }

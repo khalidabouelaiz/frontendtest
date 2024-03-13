@@ -22,223 +22,227 @@
   </head>
   <body>
     <main>
-    <nav class="navbar navbar-expand-lg navbar-light custom-bg fixed-top">
-      <div class="container">
-        <a
-          class="navbar-brand custom-color"
-          style="color: #ffffff"
-          href="/#/debut"
-        >
-          <img
-            src="../../assets/cadeau/teaa.png"
-            alt="Logo de thé "
-            style="width: 40px; height: 40px; margin-right: 10px"
-          />
-          Thé Tip Top</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link custom-color align-center"
-                href="/#/debut"
-                (click)="ondebut()"
-              >
-                <i class="material-icons">home</i>&nbsp;&nbsp;Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-color align-center"
-                style="cursor: pointer"
-                (click)="onregl()"
-                href="/#/regledejeux"
-              >
-                <i class="material-icons">description</i>&nbsp;&nbsp;Les règles
-                du jeu</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link custom-color align-center"
-                href="/#/aboutUS"
-                (click)="onabout()"
-                ><i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-color align-center"
-                href="/#/sign-up"
-                (click)="onInsc()"
-              >
-                <i class="material-icons">person_add</i
-                >&nbsp;&nbsp;Inscription</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <br />
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title" id="exampleModalLongTitle">
-              VOUS AVEZ UN PROBLÈME !!!!!
-            </h1>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true" (click)="onCloseButtonClick()"
-                >&times;</span
-              >
-            </button>
-          </div>
-          <div class="modal-body">
-            SALUT VOTRE MOT DE PASSE OU EMAIL N'EST PAS VALIDE ET VEUILLEZ
-            RÉESSAYER
-          </div>
-          <div class="modal-footer">
-            <button
-              (click)="onCloseButtonClick()"
-              type="button"
-              class="btn btn-secondary"
-            >
-              QUITTER
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-light custom-bg">
+        <div class="container">
+          <a
+            class="navbar-brand custom-color"
+            style="color: #ffffff"
+            href="/#/debut"
+          >
+            <img
+              src="../../assets/cadeau/teaa.png"
+              alt="Logo de thé "
+              style="width: 40px; height: 40px; margin-right: 10px"
+            />
+            Thé Tip Top</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link custom-color align-center"
+                  style="cursor: pointer"
+                  (click)="onregl()"
+                  href="/#/regledejeux"
+                >
+                  <i class="material-icons">description</i>&nbsp;&nbsp;Les
+                  règles du jeu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link custom-color align-center"
+                  style="cursor: grab"
+                  (click)="onabout()"
+                  href="/#/aboutUS"
+                >
+                  <i class="material-icons">info</i>&nbsp;&nbsp;À propos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link custom-color align-center"
+                  style="cursor: grab"
+                  (click)="onInsc()"
+                  href="/#/sign-up"
+                >
+                  <i class="material-icons">person_add</i
+                  >&nbsp;&nbsp;Inscription</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link custom-color align-center"
+                  style="cursor: grab"
+                  href="/#/login"
+                >
+                  <i class="material-icons">person</i>&nbsp;&nbsp;Se
+                  connecter</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+      <br />
 
-    <form
-      #f="ngForm"
-      (ngSubmit)="OnSubmit(f.value)"
-      [formGroup]="loginUserForm"
-    >
-      <section class="vh-100" class="arriere" style="margin-top: 6rem">
-        <div class="container py-5">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div
-              class="col-12 col-md-8 col-lg-6 col-xl-5"
-              style="background: transparent"
-            >
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLongTitle">
+                VOUS AVEZ UN PROBLÈME !!!!!
+              </h1>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" (click)="onCloseButtonClick()"
+                  >&times;</span
+                >
+              </button>
+            </div>
+            <div class="modal-body">
+              SALUT VOTRE MOT DE PASSE OU EMAIL N'EST PAS VALIDE ET VEUILLEZ
+              RÉESSAYER
+            </div>
+            <div class="modal-footer">
+              <button
+                (click)="onCloseButtonClick()"
+                type="button"
+                class="btn btn-secondary"
+              >
+                QUITTER
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form
+        #f="ngForm"
+        (ngSubmit)="OnSubmit(f.value)"
+        [formGroup]="loginUserForm"
+      >
+        <section class="vh-100" class="arriere" style="margin-top: 6rem">
+          <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center">
               <div
-                class="card shadow-2-strong"
-                style="border-radius: 3rem; --bs-card-bg: #ffffff94"
+                class="col-12 col-md-8 col-lg-6 col-xl-5"
+                style="background: transparent"
               >
-                <div class="card-body p-5 text-center">
-                  <h2 class="mb-5">Identification</h2>
+                <div
+                  class="card shadow-2-strong"
+                  style="border-radius: 3rem; --bs-card-bg: #ffffff94"
+                >
+                  <div class="card-body p-5 text-center">
+                    <h2 class="mb-5">Identification</h2>
 
-                  <div class="form-outline mb-4">
-                    <input
-                      type="email"
-                      id="typeEmailX-2"
-                      formControlName="email"
-                      class="form-control form-control-lg"
-                    />
-                    <label class="form-label" for="typeEmailX-2">Email</label>
-                  </div>
+                    <div class="form-outline mb-4">
+                      <input
+                        type="email"
+                        id="typeEmailX-2"
+                        formControlName="email"
+                        class="form-control form-control-lg"
+                      />
+                      <label class="form-label" for="typeEmailX-2">Email</label>
+                    </div>
 
-                  <div class="form-outline mb-4">
-                    <input
-                      type="password"
-                      id="typePasswordX-2"
-                      formControlName="password"
-                      class="form-control form-control-lg"
-                    />
-                    <label class="form-label" for="typePasswordX-2"
-                      >Mot de passe</label
-                    >
-                  </div>
+                    <div class="form-outline mb-4">
+                      <input
+                        type="password"
+                        id="typePasswordX-2"
+                        formControlName="password"
+                        class="form-control form-control-lg"
+                      />
+                      <label class="form-label" for="typePasswordX-2"
+                        >Mot de passe</label
+                      >
+                    </div>
 
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-start mb-4">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="form1Example3"
-                    />
-                    <label class="form-check-label" for="form1Example3">
-                      Enregistrer le mot de passe
-                    </label>
-                  </div>
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-start mb-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="form1Example3"
+                      />
+                      <label class="form-check-label" for="form1Example3">
+                        Enregistrer le mot de passe
+                      </label>
+                    </div>
 
-                  <button class="button" type="submit">Connexion</button>
-                  <button class="button" (click)="onRegister()">
-                    S'inscrire
-                  </button>
-
-                  <hr class="my-4" />
-
-                  <div>
-                    <button
-                      class="loginBtn loginBtn--facebook"
-                      (click)="loginWithFacebook()"
-                    >
-                      Login with Facebook
+                    <button class="button" type="submit">Connexion</button>
+                    <button class="button" (click)="onRegister()">
+                      S'inscrire
                     </button>
+
                     <hr class="my-4" />
 
-                    <button class="loginBtnE" id="buttonDiv"></button>
+                    <div>
+                      <button
+                        class="loginBtn loginBtn--facebook"
+                        (click)="loginWithFacebook()"
+                      >
+                        Login with Facebook
+                      </button>
+                      <hr class="my-4" />
+
+                      <button class="loginBtnE" id="buttonDiv"></button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-       
-        
-      </section>
- 
-    </form>
-      </main>
-<footer class="pacc">
-          <div class="container">
-            <div class="footer-left">
-              <p>&copy; 2023 Entreprise de ThéTopTop. Tous droits réservés.</p>
-              <div class="links">
-                <a href="/#/politique" class="btn-link" target="_blank"
-                  >Politique de confidentialité</a
-                >
-                |
-                <a href="/#/mentionlegal" class="btn-link" target="_blank"
-                  >Mentions légales</a
-                >
-                |
-                <a href="/#/cookies" class="btn-link" target="_blank"
-                  >Politique des cookies</a
-                >
-              </div>
-            </div>
+        </section>
+      </form>
+    </main>
+    <footer class="pacc">
+      <div class="container">
+        <div class="footer-left">
+          <p>&copy; 2023 Entreprise de ThéTopTop. Tous droits réservés.</p>
+          <div class="links">
+            <a href="/#/politique" class="btn-link" target="_blank"
+              >Politique de confidentialité</a
+            >
+            |
+            <a href="/#/mentionlegal" class="btn-link" target="_blank"
+              >Mentions légales</a
+            >
+            |
+            <a href="/#/cookies" class="btn-link" target="_blank"
+              >Politique des cookies</a
+            >
+            |
+            <a href="/#/reglement" class="btn-link" target="_blank"
+              >Règlement</a
+            >
           </div>
-        </footer>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
