@@ -9,7 +9,7 @@
 .custom-color {
   color: white !important;
 }
-main {
+body {
   background: url('src/assets/cadeau/acceuila.webp');
   background-size: cover;
 }
