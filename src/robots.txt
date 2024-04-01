@@ -7,6 +7,10 @@ Allow: /#/debut
 Allow: /#/aboutUS
 Allow: /#/sign-up
 Allow: /#/login
-Allow: /#/login
+Allow: /#/cookies
+Allow: /#/reglement
+Allow: /#/mentionlegal
+Allow: /#/politique
+
 
 sitemap: https://thethiptopkhalidabouelaiz.eu/sitemap.xml
